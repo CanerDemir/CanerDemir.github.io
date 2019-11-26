@@ -183,9 +183,8 @@ a {
     justify-content: center;
 }
 
-.cd-brown h3 {
-    background-color: #db1f1f24;
-    padding: 5px;
+.cd-part h3 {
+    border-bottom: 1px solid #20629D;
 }
 
 .exp-thumb {
@@ -228,29 +227,6 @@ a {
     -moz-transition: opacity 0.35s ease;
     -o-transition: opacity 0.35s ease;
     transition: opacity 0.35s ease;
-}
-
-.cd-blue h3 {
-    background-color: #AC000047;
-    padding: 5px;
-}
-
-.cd-blue .list-group-item {
-    background: transparent;
-}
-
-.cd-purple h3 {
-    background-color: #e5027854;
-    padding: 5px;
-}
-
-.cd-contact h3 {
-    background-color: #20629D;
-    padding: 5px;
-}
-
-.contact {
-    color: #fff;
 }
 
 /* .contact a {
