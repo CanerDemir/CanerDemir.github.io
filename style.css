@@ -171,12 +171,17 @@ a {
     align-items: center;
 }
 
+.cd-part-wrapper {
+    position: relative;
+}
+
 .cd-part {
     width: 100%;
     min-height: 50vh;
     padding: 10px;
     margin: 10px auto;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+    position: relative;
 }
 
 .cd-part .row {
@@ -185,6 +190,26 @@ a {
 
 .cd-part h3 {
     border-bottom: 1px solid #20629D;
+    background: none;
+    transition: all 1s ease-in;
+    position: relative;
+}
+
+.cd-part h3::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-image: linear-gradient(to right, #4481eb 0%, #b6edff 100%);
+    transform-origin: left;
+    transition: width 1s ease;
+    z-index: -1;
+}
+
+.cd-part:hover h3::after {
+    width: 100%;
 }
 
 .exp-thumb {
